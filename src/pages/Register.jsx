@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import { Formik } from 'formik';
 import {useNavigate} from 'react-router-dom';
 import * as Yup from 'yup';
-
-//*Components
-import Nav from "../components/Nav";
+import { CheckBox } from 'react-native-elements'
 
 //*Css
 import StyleText from "../../css/TextStyle";
@@ -15,7 +13,7 @@ import StyleContainer from "../../css/ContainerStyle";
 import StyleBackground from "../../css/BackgroundStyle";
 import StyleContainerScroll from "../../css/ScrollViewStyle";
 import StyleButtonForm from "../../css/ButtonStyleForm";
-
+import StyleButton from "../../css/ButtonStyle";
 
 const loginValidationSchema = Yup.object().shape({
     name: Yup.string()
@@ -31,7 +29,7 @@ const loginValidationSchema = Yup.object().shape({
     .required('Campo obligatorio *'),
 })
 
-const Form= () =>{
+const Form= ({checked}) =>{
 
     const [user, setuser] = useState({})
     const navigate = useNavigate();
@@ -51,11 +49,12 @@ const Form= () =>{
     return(
 
     <StyleContainerScroll container>
-        <StyleBackground colors={['#04A3F3', '#17E1BF']}  background/> 
-        <StyleImagen source={require('../img/registro.webp')} imagen />
+        <StyleBackground colors={['#FFFF', '#FFFFFF']} background/> 
+        <StyleImagen source={require('../img/header.webp')} imagen />
+
 
         <StyleContainer content_form>
-            <StyleText title >Registro</StyleText>
+            <StyleText title >Crear cuenta</StyleText>
 
             <Formik
             validationSchema={loginValidationSchema}
@@ -73,27 +72,49 @@ const Form= () =>{
                         </StyleContainer>
 
                         <StyleContainer content_input>
-                            <StyleInput placeholder="Correo" name="email" secureTextEntry={false} value={values.email} onBlur={handleBlur('email')} onChangeText={handleChange('email')} input/>
+                            <StyleInput placeholder="Email" name="email" secureTextEntry={false} value={values.email} onBlur={handleBlur('email')} onChangeText={handleChange('email')} input/>
                                 {errors.email &&
                                     <StyleText error>{errors.email}</StyleText>
                                 }
                         </StyleContainer>
 
                         <StyleContainer content_input>
-                            <StyleInput placeholder="Contraseña" secureTextEntry={true} name="password" vale={values.password} onBlur={handleBlur('password')} onChangeText={handleChange('password')} input/>
+                            <StyleInput placeholder="Password" secureTextEntry={true} name="password" vale={values.password} onBlur={handleBlur('password')} onChangeText={handleChange('password')} input/>
                                 {errors.password &&
                                     <StyleText error>{errors.password}</StyleText>
                                 }
                         </StyleContainer>
 
                         <StyleContainer content_input>
-                            <StyleInput placeholder="Confirmar contraseña" name="password_two" secureTextEntry={true} value={values.password_two} onBlur={handleBlur('password_two')} onChangeText={handleChange('password_two')} input/>
+                            <StyleInput placeholder="Confirmar password" name="password_two" secureTextEntry={true} value={values.password_two} onBlur={handleBlur('password_two')} onChangeText={handleChange('password_two')} input/>
                                 {errors.password_two &&
                                     <StyleText error>{errors.password_two}</StyleText>
                                 }
                         </StyleContainer>
 
-                        <StyleButtonForm onPress={handleSubmit} button text="Login">
+                        <StyleContainer content_password>
+                            <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' center title=''/>
+                            
+                            <StyleContainer content_password style={{ flexDirection:"column",}}>
+
+                            <StyleText link_text> Acepto los </StyleText>
+
+                                <StyleButton to="/register" button_sesion >
+                                        <StyleText  link_register>Términos de Servicio</StyleText>
+                                </StyleButton>
+                                <StyleText link_text > y la </StyleText>
+
+                                <StyleButton to="/register" button_sesion >
+                                        <StyleText  link_register >Términos de Servicio</StyleText>
+                                </StyleButton>
+                            </StyleContainer>
+                            
+                            
+
+                        </StyleContainer>
+
+
+                        <StyleButtonForm onPress={handleSubmit} button text="Crear cuenta">
                         </StyleButtonForm>
 
                     </StyleContainer>
@@ -103,7 +124,6 @@ const Form= () =>{
             
         </StyleContainer>
         
-        <Nav/>
 
     </StyleContainerScroll>
       

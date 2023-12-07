@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         height:'auto',
         flexDirection:"row",
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         marginTop:5,
         marginBottom:30,
         position:'relative',

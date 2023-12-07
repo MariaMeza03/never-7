@@ -77,7 +77,9 @@ const Home= ({checked}) =>{
                             </StyleContainer >
 
                             <StyleContainer content_password>
-                                <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' center title='Recordar'/>
+                                <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' center/>
+                                <StyleText link_text>Recodar           </StyleText>
+
                                 <StyleButton to="/register" button_sesion >
                                     <StyleText  link_password>Olvidate tu password?</StyleText>
                                 </StyleButton>
@@ -99,7 +101,7 @@ const Home= ({checked}) =>{
 
                     <StyleContainer  content_media_two>
                         <StyleButton to="/register" button_sesion >
-                            <StyleImagen source={require('../img/facebook.png')} imagen />
+                            <StyleImagen source={require('../img/google.png')} imagen />
                         </StyleButton>
 
                         <StyleButton to="/register" button_sesion >
