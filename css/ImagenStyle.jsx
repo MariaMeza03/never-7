@@ -4,10 +4,11 @@ import { StyleSheet, Image  } from "react-native";
 const styles = StyleSheet.create({
 
     imagen:{
-        width:300,
-        resizeMode: 'contain',
-        margin:"auto",
-        marginHorizontal:"auto"
+
+    resizeMode: 'contain',
+    
+
+
     },
     imagen_logo:{
         width: 40,

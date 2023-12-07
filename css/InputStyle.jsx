@@ -6,9 +6,10 @@ const styles = StyleSheet.create({
     
     input:{
         width:"100%",
-        borderBottomWidth:3,
-        borderBottomColor:"#000",
+        borderWidth:1,
+        borderColor:"#D1CDCD",
         padding:10,
+        borderRadius:30,
     },
 
 })

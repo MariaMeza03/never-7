@@ -63,12 +63,44 @@ const styles = StyleSheet.create({
         marginVertical:50,
         position:'relative',
     },
+
+    content_new_user:{
+        width:'100%',
+        height:'auto',
+        flexDirection:"row",
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical:50,
+        position:'relative',
+    },
+
+    content_media_two:{
+        width:'100%',
+        height:'auto',
+        flexDirection:"row",
+        alignItems: 'center',
+        justifyContent: 'center',
+        position:'relative',
+        gap:20,
+        marginBottom:30
+    },
+
+    content_password:{
+        width:'100%',
+        height:'auto',
+        flexDirection:"row",
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop:5,
+        marginBottom:30,
+        position:'relative',
+    },
     
 
 })
 
 
-export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav, children}){
+export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, children}){
     const containerStyle =[
         text && styles.text,
         content_form && styles.content_form,
@@ -80,6 +112,9 @@ export default function StyleContainer({container_imagen_result,content_form_for
         content_form_form_formik && styles.content_form_form_formik,
         container_imagen_result && styles.container_imagen_result,
         content_nav && styles.content_nav,
+        content_new_user && styles.content_new_user,
+        content_password && styles.content_password,
+        content_media_two && styles.content_media_two
     ]
 
     return(

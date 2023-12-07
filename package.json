@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/html-elements": "^0.5.1",
+    "@react-native-community/checkbox": "^0.5.16",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
     "@types/react": "~18.2.14",
@@ -43,5 +44,4 @@
     "eslint-plugin-react": "^7.32.2"
   },
   "private": true
- 
 }

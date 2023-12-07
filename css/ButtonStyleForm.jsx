@@ -11,9 +11,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         alignItems: 'center',
         gap:10,
-        color:"black",
-        position:'relative',
-        left:-15,
+        borderColor:'#F5C12A',
+        borderWidth:1,
+        borderRadius:50,
     },
 
     button_sesion:{
@@ -47,7 +47,7 @@ export default function StyleButtonForm({button_pdf,button, button_sesion, child
     ]
 
     return(
-        <Button onPress={onPress}  title={title} mode="text" icon={({ }) => (<Image source={require('../src/img/arrow.webp')} style={{ width:40 , height: 40, tintColor: 'black', resizeMode: 'contain' ,padding:0 }}/>)} buttonColor="transparent" textColor="black" style={ buttonStyle }  contentStyle={{flexDirection: 'row-reverse'}}>
+        <Button onPress={onPress}  title={title} mode="text" icon={({ }) => (<Image source={require('../src/img/button.png')} style={{ width:50 , height: 45,  resizeMode: 'contain' ,padding:0 , position:'relative', left:-15}}/>)} buttonColor="transparent" textColor="black" style={ buttonStyle }  contentStyle={{flexDirection: 'row'}}>
              {text}
         </Button>
     )
