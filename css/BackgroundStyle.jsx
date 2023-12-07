@@ -11,6 +11,11 @@ const styles = StyleSheet.create({
         zIndex:0,
     },
 
+    image: {
+        flex: 1,
+        justifyContent: 'center',
+      },
+
 
 
 })
