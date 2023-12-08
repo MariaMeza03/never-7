@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         backgroundColor: 'transparent',
         alignItems: 'center',
+        justifyContent:'center',
         marginLeft:"auto",
         underlayColor:"transparent",
         padding:0,
@@ -50,7 +51,7 @@ export default function StyleButton({button_pdf,button, button_sesion, children,
     ]
 
     return(
-        <Link to={to} underlayColor="transparent" component={TouchableOpacity} style={{backgroundColor:"transparent"}}>
+        <Link to={to} underlayColor="transparent" component={TouchableOpacity} style={{backgroundColor:"transparent", margin:0 , padding:0}}>
             <View style={ buttonStyle }  component={TouchableOpacity}>
                 { children }
             </View>

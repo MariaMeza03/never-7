@@ -29,7 +29,7 @@ const loginValidationSchema = Yup.object().shape({
     .required('Campo obligatorio *'),
 })
 
-const Form= ({checked}) =>{
+const FormRegister= ({checked}) =>{
 
     const [user, setuser] = useState({})
     const navigate = useNavigate();
@@ -49,7 +49,6 @@ const Form= ({checked}) =>{
     return(
 
     <StyleContainerScroll container>
-        <StyleBackground colors={['#FFFF', '#FFFFFF']} background/> 
         <StyleImagen source={require('../img/header.webp')} imagen />
 
 
@@ -93,20 +92,23 @@ const Form= ({checked}) =>{
                         </StyleContainer>
 
                         <StyleContainer content_password>
-                            <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' center title=''/>
+                            <CheckBox checked={checked} center title=''/>
                             
-                            <StyleContainer content_password style={{ flexDirection:"column",}}>
-
-                            <StyleText link_text> Acepto los </StyleText>
-
-                                <StyleButton to="/register" button_sesion >
+                            <StyleContainer content_terminos >
+                            <StyleText > 
+                                    <StyleButton to="/register" button_sesion >
+                                        <StyleText link_text> Acepto los </StyleText>
                                         <StyleText  link_register>Términos de Servicio</StyleText>
-                                </StyleButton>
-                                <StyleText link_text > y la </StyleText>
+                                    </StyleButton>
+                                    
 
-                                <StyleButton to="/register" button_sesion >
-                                        <StyleText  link_register >Términos de Servicio</StyleText>
-                                </StyleButton>
+                                    <StyleButton to="/register" button_sesion >
+                                        <StyleText link_text > y la </StyleText>    
+                                        <StyleText  link_register >Política de Privacidad</StyleText>
+                                    </StyleButton>
+                            </StyleText>
+                                    
+
                             </StyleContainer>
                             
                             
@@ -129,4 +131,4 @@ const Form= ({checked}) =>{
       
     )
 }
-export default Form
+export default FormRegister

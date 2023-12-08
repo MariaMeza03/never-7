@@ -42,10 +42,13 @@ const styles = StyleSheet.create({
     },
 
     content_media:{
-        gap:10,
+        width:'100%',
+        position:'relative',
+        left:-20,
         flex:1 , 
         flexDirection:"row",
-        paddingBottom:40,
+        justifyContent:'center',
+        alignItems:'center'
     },
 
     container_imagen_result:{
@@ -86,21 +89,30 @@ const styles = StyleSheet.create({
     },
 
     content_password:{
+        flex:1 ,
         width:'100%',
-        height:'auto',
         flexDirection:"row",
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         marginTop:5,
         marginBottom:30,
-        position:'relative',
     },
+
+    content_terminos:{
+        width:'100%',
+        height:'auto',
+        flex:1 ,
+        flexDirection:"column",
+        overflow:'hidden',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+    }
     
 
 })
 
 
-export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, children}){
+export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, content_terminos, children}){
     const containerStyle =[
         text && styles.text,
         content_form && styles.content_form,
@@ -114,7 +126,8 @@ export default function StyleContainer({container_imagen_result,content_form_for
         content_nav && styles.content_nav,
         content_new_user && styles.content_new_user,
         content_password && styles.content_password,
-        content_media_two && styles.content_media_two
+        content_media_two && styles.content_media_two,
+        content_terminos && styles.content_terminos
     ]
 
     return(

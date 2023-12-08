@@ -4,6 +4,7 @@ import { Formik } from 'formik';
 import {useNavigate} from 'react-router-dom';
 import * as Yup from 'yup';
 import { CheckBox } from 'react-native-elements'
+import { useFonts } from 'expo-font';
 
 //*Components
 import Nav from "../components/Nav";
@@ -30,6 +31,7 @@ const loginValidationSchema = Yup.object().shape({
 
 const Home= ({checked}) =>{
 
+
     const [user, setuser] = useState({})
     const navigate = useNavigate();
 
@@ -50,7 +52,6 @@ const Home= ({checked}) =>{
     return(
 
         <StyleContainerScroll container>
-                <StyleBackground colors={['#FFFF', '#FFFFFF']}  background/> 
                 <StyleImagen source={require('../img/header.webp')} imagen />
 
                 <StyleContainer text>
@@ -77,10 +78,13 @@ const Home= ({checked}) =>{
                             </StyleContainer >
 
                             <StyleContainer content_password>
-                                <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' center/>
-                                <StyleText link_text>Recodar           </StyleText>
 
-                                <StyleButton to="/register" button_sesion >
+                                <StyleContainer  content_media> 
+                                    <CheckBox checked={checked} checkedIcon='dot-circle-o' uncheckedIcon='circle-o' />
+                                    <StyleText link_text>Recodar</StyleText>
+                                </StyleContainer>
+
+                                <StyleButton to="/ForgetPassword" button_sesion >
                                     <StyleText  link_password>Olvidate tu password?</StyleText>
                                 </StyleButton>
                              </StyleContainer>

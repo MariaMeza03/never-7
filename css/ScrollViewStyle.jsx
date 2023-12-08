@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         width:"100%",
         height:"auto",
         flexGrow : 1, 
-        justifyContent : 'space-between',
+     
         alignItems: 'center',
         marginTop:Constants.statusBarHeight,
         

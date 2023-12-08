@@ -5,7 +5,7 @@ import { Button } from 'react-native-paper';
 const styles = StyleSheet.create({
 
     button:{
-        width:"100%",
+        width:'auto',
         height:"auto",
         flexDirection:'row',
         backgroundColor: 'transparent',
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         alignItems: 'center',
         marginLeft:"auto",
-        underlayColor:"transparent"
+        underlayColor:"transparent",
+        gap:10,
         
     },
 
@@ -47,7 +48,7 @@ export default function StyleButtonForm({button_pdf,button, button_sesion, child
     ]
 
     return(
-        <Button onPress={onPress}  title={title} mode="text" icon={({ }) => (<Image source={require('../src/img/button.png')} style={{ width:50 , height: 45,  resizeMode: 'contain' ,padding:0 , position:'relative', left:-15}}/>)} buttonColor="transparent" textColor="black" style={ buttonStyle }  contentStyle={{flexDirection: 'row'}}>
+        <Button onPress={onPress}  title={title} mode="text" icon={({ }) => (<Image source={require('../src/img/button.png')} style={{ width:50 , height: 45,  resizeMode: 'contain' ,padding:0 , position:'relative', left:-47}}/>)} buttonColor="transparent" textColor="black" style={ buttonStyle }  contentStyle={{flexDirection: 'row', width:'100%', justifyContent:'center', alignItems:'center'}}>
              {text}
         </Button>
     )
