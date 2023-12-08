@@ -15,7 +15,6 @@ import StyleInput   from "../../css/InputStyle";
 import StyleImagen from "../../css/ImagenStyle";
 import StyleButton from "../../css/ButtonStyle";
 import StyleContainer from "../../css/ContainerStyle";
-import StyleBackground from "../../css/BackgroundStyle";
 import StyleContainerScroll from "../../css/ScrollViewStyle";
 import StyleButtonForm from "../../css/ButtonStyleForm";
 
@@ -30,7 +29,6 @@ const loginValidationSchema = Yup.object().shape({
 
 
 const Home= ({checked}) =>{
-
 
     const [user, setuser] = useState({})
     const navigate = useNavigate();

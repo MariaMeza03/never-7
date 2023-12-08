@@ -1,7 +1,5 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
-import { useFonts, jost } from '@expo-google-fonts/jost';
-
 
 const styles = StyleSheet.create({
 
@@ -10,20 +8,17 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         textAlign:'center',
         paddingBottom:15,
-        fontFamily: 'jost'
     },
 
     title_cotizador:{
         fontSize:40,
         paddingLeft:10,
-        fontFamily: 'jost'
     },
 
     link_text:{
         fontSize:15,
         fontWeight:'bold',
         textAlign:'center',
-        fontFamily: 'jost'
         
     },
 
@@ -31,7 +26,6 @@ const styles = StyleSheet.create({
         fontSize:15,
         marginBottom:40,
         marginTop:40,
-        fontFamily: 'jost'
         
     },
 
