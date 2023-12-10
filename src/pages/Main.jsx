@@ -5,11 +5,11 @@ import { Route } from "react-router-native";
 //*Pages
 import Home from "./Home";
 
-import Register from "./Register";
+import Register from "./Login/Register";
 import Profile from "./Profile";
-import ChangeEmail from "./ForgetPassword";
-import ChangePass from "./ChangePassword";
-import EmailOne from "./EmailOne";
+import ChangeEmail from "./Login/ForgetPassword";
+import ChangePass from "./Login/ChangePassword";
+import EmailOne from "./Login/EmailOne";
 
 const Main = () =>{
     return(

@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
         color:'#EDC34D',
         borderBottomColor:'#EDC34D',
         borderBottomWidth:1,
-        fontFamily: 'jost'
     },
 
     link_register:{

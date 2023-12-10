@@ -6,14 +6,14 @@ import * as Yup from 'yup';
 import { CheckBox } from 'react-native-elements'
 
 //*Css
-import StyleText from "../../css/TextStyle";
-import StyleInput   from "../../css/InputStyle";
-import StyleImagen from "../../css/ImagenStyle";
-import StyleContainer from "../../css/ContainerStyle";
-import StyleBackground from "../../css/BackgroundStyle";
-import StyleContainerScroll from "../../css/ScrollViewStyle";
-import StyleButtonForm from "../../css/ButtonStyleForm";
-import StyleButton from "../../css/ButtonStyle";
+import StyleText from "../../../css/TextStyle";
+import StyleInput   from "../../../css/InputStyle";
+import StyleImagen from "../../../css/ImagenStyle";
+import StyleContainer from "../../../css/ContainerStyle";
+import StyleBackground from "../../../css/BackgroundStyle";
+import StyleContainerScroll from "../../../css/ScrollViewStyle";
+import StyleButtonForm from "../../../css/ButtonStyleForm";
+import StyleButton from "../../../css/ButtonStyle";
 
 const loginValidationSchema = Yup.object().shape({
     name: Yup.string()
@@ -49,7 +49,7 @@ const FormRegister= ({checked}) =>{
     return(
 
     <StyleContainerScroll container>
-        <StyleImagen source={require('../img/header.webp')} imagen />
+        <StyleImagen source={require('../../img/header.webp')} imagen />
 
 
         <StyleContainer content_form>

@@ -5,13 +5,13 @@ import {useNavigate} from 'react-router-dom';
 import * as Yup from 'yup';
 
 //*Css
-import StyleText from "../../css/TextStyle";
-import StyleInput   from "../../css/InputStyle";
-import StyleImagen from "../../css/ImagenStyle";
-import StyleContainer from "../../css/ContainerStyle";
-import StyleContainerScroll from "../../css/ScrollViewStyle";
-import StyleButtonForm from "../../css/ButtonStyleForm";
-import StyleButton from "../../css/ButtonStyle";
+import StyleText from "../../../css/TextStyle";
+import StyleInput   from "../../../css/InputStyle";
+import StyleImagen from "../../../css/ImagenStyle";
+import StyleContainer from "../../../css/ContainerStyle";
+import StyleContainerScroll from "../../../css/ScrollViewStyle";
+import StyleButtonForm from "../../../css/ButtonStyleForm";
+import StyleButton from "../../../css/ButtonStyle";
 
 const loginValidationSchema = Yup.object().shape({
     email: Yup.string()
@@ -35,7 +35,7 @@ const FormEmail= ({checked}) =>{
     return(
 
     <StyleContainerScroll container>       
-        <StyleImagen source={require('../img/header.webp')} imagen />
+        <StyleImagen source={require('../../img/header.webp')} imagen />
 
 
         <StyleContainer content_form>
@@ -73,7 +73,7 @@ const FormEmail= ({checked}) =>{
         </StyleContainer>
 
         <StyleButton to="/register" button_sesion >
-                <StyleImagen source={require('../img/button.png')} imagen />  
+                <StyleImagen source={require('../../img/button.png')} imagen />  
                 <StyleText  link_register >Volver a identificarme</StyleText>
         </StyleButton>
         
