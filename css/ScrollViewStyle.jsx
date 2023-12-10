@@ -7,8 +7,9 @@ const styles = StyleSheet.create({
     container:{
         width:"100%",
         height:"auto",
+        paddingBottom:20,
         flexGrow : 1, 
-     
+        justifyContent : 'center',
         alignItems: 'center',
         marginTop:Constants.statusBarHeight,
         

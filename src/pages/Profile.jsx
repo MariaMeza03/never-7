@@ -4,8 +4,6 @@ import { Formik } from 'formik';
 import {useNavigate} from 'react-router-dom';
 import * as Yup from 'yup';
 
-//*Components
-import Nav from "../components/Nav";
 
 //*Css
 import StyleText from "../../css/TextStyle";

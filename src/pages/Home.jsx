@@ -4,10 +4,7 @@ import { Formik } from 'formik';
 import {useNavigate} from 'react-router-dom';
 import * as Yup from 'yup';
 import { CheckBox } from 'react-native-elements'
-import { useFonts } from 'expo-font';
 
-//*Components
-import Nav from "../components/Nav";
 
 //*Css
 import StyleText from "../../css/TextStyle";
@@ -82,7 +79,7 @@ const Home= ({checked}) =>{
                                     <StyleText link_text>Recodar</StyleText>
                                 </StyleContainer>
 
-                                <StyleButton to="/ForgetPassword" button_sesion >
+                                <StyleButton to="/veterinario" button_sesion >
                                     <StyleText  link_password>Olvidate tu password?</StyleText>
                                 </StyleButton>
                              </StyleContainer>

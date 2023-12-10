@@ -11,6 +11,10 @@ import ChangeEmail from "./Login/ForgetPassword";
 import ChangePass from "./Login/ChangePassword";
 import EmailOne from "./Login/EmailOne";
 
+/*Veterinarios*/
+import Veterinarios from "./Veterinario/ListaVeterinario";
+import AddVeterinariosOne from "./Veterinario/AddVeterinarioOne";
+
 const Main = () =>{
     return(
         <Routes>
@@ -20,6 +24,10 @@ const Main = () =>{
             <Route path='/EmailOne' element={<EmailOne/>} />
             <Route path='/register' element={<Register/>} />
             <Route path='/profile' element={<Profile />} />
+
+            {/* Veterinarios */}
+            <Route path='/veterinario' element={<Veterinarios />} />
+            <Route path='/addVeterinarioOne' element={<AddVeterinariosOne />} />
         </Routes>
 
     )

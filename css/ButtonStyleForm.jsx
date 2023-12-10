@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
         height:"auto",
         flexDirection:'row',
         backgroundColor: 'transparent',
+        
         alignItems: 'center',
         gap:10,
         borderColor:'#F5C12A',

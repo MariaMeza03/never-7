@@ -12,6 +12,8 @@ import StyleButtonForm from "../../../css/ButtonStyleForm";
 
 const FormPassword= ({checked}) =>{
 
+    
+
 
     return(
 

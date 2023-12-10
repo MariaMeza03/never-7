@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 
 
-//*Components
-import Nav from "../components/Nav";
-
 //*Css
 import StyleImagen from "../../css/ImagenStyle";
 import StyleContainer from "../../css/ContainerStyle";

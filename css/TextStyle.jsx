@@ -15,6 +15,13 @@ const styles = StyleSheet.create({
         paddingLeft:10,
     },
 
+    title_header:{
+        fontSize:20,
+        fontWeight:'bold',
+        textAlign:'center',
+        
+    },
+
     link_text:{
         fontSize:15,
         fontWeight:'bold',
@@ -63,7 +70,7 @@ const styles = StyleSheet.create({
 })
 
 
-export default function StyleText({error,hr,label,title, link_text,children,title_cotizador,link_password,link_register, link_text_two}){
+export default function StyleText({error,hr,label,title, link_text,children,title_cotizador,link_password,link_register,title_header, link_text_two}){
     
     const textStyle =[
         title && styles.title,
@@ -74,7 +81,8 @@ export default function StyleText({error,hr,label,title, link_text,children,titl
         error && styles.error,
         link_password && styles.link_password,
         link_register && styles.link_register,
-        link_text_two && styles. link_text_two
+        link_text_two && styles. link_text_two,
+        title_header && styles.title_header
     ]
 
     return(
