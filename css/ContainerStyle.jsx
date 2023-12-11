@@ -223,6 +223,12 @@ const styles = StyleSheet.create({
         paddingTop:30,
         paddingBottom:0,
         
+    },
+    content_imagen_services:{
+        borderBottomColor:'#F5C12A',
+        borderWidth:1,
+        borderRadius:10,
+        padding:5
     }
 
 

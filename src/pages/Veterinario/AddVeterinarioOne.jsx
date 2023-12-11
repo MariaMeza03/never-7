@@ -24,12 +24,12 @@ const ListaVeterinarios= ({checked}) =>{
            <StyleContainer  content_taget_option_veterinario>
                 <StyleContainer  content_taget_option>
                     <TargetVeterinariOption nombre="Datos de la clínica" imagen={require('../../img/hose-icon.webp')} uri={'/addDatosClinica'} />
-                    <TargetVeterinariOption nombre="Datos del Dr."  imagen={require('../../img/men-icon.webp')} />
+                    <TargetVeterinariOption nombre="Datos del Dr."  imagen={require('../../img/men-icon.webp')}  uri={'/addDatosVeterinario'}/>
 
                 </StyleContainer>
 
                 <StyleContainer  content_taget_option>
-                    <TargetVeterinariOption nombre="Servicios"  imagen={require('../../img/trofeo-icon.webp')} />
+                    <TargetVeterinariOption nombre="Servicios"  imagen={require('../../img/trofeo-icon.webp')} uri={'/addDatosServices'}/>
                     <TargetVeterinariOption nombre="Documentos"  imagen={require('../../img/clipboard-icon.webp')} />
 
                 </StyleContainer>

@@ -38,7 +38,7 @@ const AddDatosClinica= ({checked}) =>{
         //*Unicamente prueba, la idea es conectarlo al back
 
         if(values.name !== ''){
-            navigate('/addDatosVeterinario')
+            navigate('/addVeterinarioOne')
         }else{
             alert('Todos los datos son necesarios, te agredecemos que ingreses la información correcta')
         }
@@ -67,14 +67,14 @@ const AddDatosClinica= ({checked}) =>{
                         </StyleContainer>
 
                         <StyleContainer content_input>
-                            <StyleInput placeholder="Direccion" secureTextEntry={true} name="address" vale={values.address} onBlur={handleBlur('address')} onChangeText={handleChange('address')} input/>
+                            <StyleInput placeholder="Direccion" secureTextEntry={false} name="address" vale={values.address} onBlur={handleBlur('address')} onChangeText={handleChange('address')} input/>
                                 {errors.address &&
                                     <StyleText error>{errors.address}</StyleText>
                                 }
                         </StyleContainer>
 
                         <StyleContainer content_input>
-                            <StyleInput placeholder="Telefono" name="phone" secureTextEntry={true} value={values.phone} onBlur={handleBlur('phone')} onChangeText={handleChange('phone')} input/>
+                            <StyleInput placeholder="Telefono" name="phone" secureTextEntry={false} value={values.phone} onBlur={handleBlur('phone')} onChangeText={handleChange('phone')} input/>
                                 {errors.phone &&
                                     <StyleText error>{errors.phone}</StyleText>
                                 }

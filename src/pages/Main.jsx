@@ -16,6 +16,7 @@ import Veterinarios from "./Veterinario/ListaVeterinario";
 import AddVeterinariosOne from "./Veterinario/AddVeterinarioOne";
 import AddDatosClinica from "./Veterinario/AddDatosClinica";
 import AddDatosVeterinario from "./Veterinario/AddDatosVeterinario"
+import AddDatosServices from "./Veterinario/AddServices"
 
 const Main = () =>{
     return(
@@ -32,6 +33,7 @@ const Main = () =>{
             <Route path='/addVeterinarioOne' element={<AddVeterinariosOne />} />
             <Route path='/addDatosClinica' element={<AddDatosClinica />} />
             <Route path='/addDatosVeterinario' element={<AddDatosVeterinario />} />
+            <Route path='/addDatosServices' element={<AddDatosServices />} />
         </Routes>
 
     )
