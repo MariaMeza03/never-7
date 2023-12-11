@@ -218,17 +218,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
+ 
     content_asistent:{
         paddingTop:30,
         paddingBottom:0,
         
     },
     content_imagen_services:{
-        borderBottomColor:'#F5C12A',
+        borderColor:'#F5C12A',
         borderWidth:1,
         borderRadius:10,
-        padding:5
+        padding:5,
+        height:'auto',
+        width:'auto'
     }
 
 
@@ -237,7 +239,7 @@ const styles = StyleSheet.create({
 })
 
 
-export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, content_terminos,content_button_header,content_media_header,content_header,content_button_return,target_veterinario,target_name_avatar, content_target_vaterinario,content_taget,imagen_change, content_taget_option,target_veterinario_option,content_taget_option_veterinario,content_asistent,children}){
+export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, content_terminos,content_button_header,content_media_header,content_header,content_button_return,target_veterinario,target_name_avatar, content_target_vaterinario,content_taget,imagen_change, content_taget_option,target_veterinario_option,content_taget_option_veterinario,content_asistent,content_imagen_services,children}){
     const containerStyle =[
         text && styles.text,
         content_form && styles.content_form,
@@ -265,7 +267,9 @@ export default function StyleContainer({container_imagen_result,content_form_for
         content_taget_option && styles.content_taget_option,
         target_veterinario_option && styles.target_veterinario_option,
         content_taget_option_veterinario && styles.content_taget_option_veterinario,
-        content_asistent && styles.content_asistent
+        content_asistent && styles.content_asistent,
+        content_imagen_services && styles.content_imagen_services,
+        
     ]
 
     return(

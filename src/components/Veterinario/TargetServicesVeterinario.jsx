@@ -9,17 +9,20 @@ import StyleButton from "../../../css/ButtonStyle";
 import StyleContainer from "../../../css/ContainerStyle";
 
 
-const TargetServices= ({ imagen, nombre}) =>{
+const TargetServices= ({ imagen, nombre, uri}) =>{
    
 
     return(
    
-     <StyleButton to={uri} target_veterinario_option>
-        <StyleContainer content_imagen_services>
-            <StyleImagen source={imagen} imagen_option_veterinario/>
+    <StyleButton to={uri} target_services >
+        <StyleContainer target_name_avatar>
+            <StyleContainer content_imagen_services>
+                <StyleImagen source={imagen} />
+            </StyleContainer>
         </StyleContainer>
-    
-        <StyleText link_text>{nombre}</StyleText>
+       
+
+        <StyleText title_header>{nombre}</StyleText>
      </StyleButton>
         
       

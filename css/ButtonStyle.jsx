@@ -57,17 +57,38 @@ const styles = StyleSheet.create({
         paddingHorizontal:20,
         paddingVertical:40,
     },
+    target_services:{
+        borderRadius:10,
+        flexWrap:'wrap',
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent: 'flex-start',
+        width:350,
+        height:'auto',
+        shadowColor: "#000",
+        shadowOffset:{
+        width: 0,
+        height: 2,
+        },
+        shadowOpacity: 0.23,
+        shadowRadius: 2.62,
+        elevation: 4,
+        paddingHorizontal:20,
+        paddingVertical:20,
+        gap:10
+    },
 
 
 })
 
 
-export default function StyleButton({button_pdf,button, button_sesion, children,to,target_veterinario_option}){
+export default function StyleButton({button_pdf,button, button_sesion, children,to,target_veterinario_option,target_services}){
     const buttonStyle =[
         button && styles.button,
         button_sesion && styles.button_sesion,
         button_pdf && styles.button_pdf,
-        target_veterinario_option && styles.target_veterinario_option
+        target_veterinario_option && styles.target_veterinario_option,
+        target_services && styles.target_services
     ]
 
     return(

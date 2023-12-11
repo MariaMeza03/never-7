@@ -5,7 +5,6 @@ import {useNavigate} from 'react-router-dom';
 //*Css
 import StyleContainer from "../../../css/ContainerStyle";
 import StyleContainerScroll from "../../../css/ScrollViewStyle";
-
 import TargetVeterinario from "../../components/Veterinario/TargetVeterinarioGeneral";
 import HeaderVeterinarioChangeImagen from "../../components/layouts/HeaderVeterinarioTwo";
 import TargetVeterinariOption from "../../components/Veterinario/TargetOptionVeterinario";
