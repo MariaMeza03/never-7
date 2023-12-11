@@ -13,14 +13,12 @@ import Listenbutton from "../../components/layouts/Listenbutton";
 
 const ListaVeterinarios= ({checked}) =>{
 
-    const [user, setuser] = useState({})
     const navigate = useNavigate();
 
-    const handleSubmit = (values) => {
-        setuser(values)
-
+    const handleSubmit = () => {
+    
         //*Unicamente prueba, la idea es conectarlo al back
-        navigate('/veterinario')
+        navigate('/addVeterinarioOne')
 	}
 
     return(

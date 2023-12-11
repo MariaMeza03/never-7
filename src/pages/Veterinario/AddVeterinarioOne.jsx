@@ -13,17 +13,7 @@ import Listenbutton from "../../components/layouts/Listenbutton";
 
 
 const ListaVeterinarios= ({checked}) =>{
-
-    const [user, setuser] = useState({})
-    const navigate = useNavigate();
-
-    const handleSubmit = (values) => {
-        setuser(values)
-
-        //*Unicamente prueba, la idea es conectarlo al back
-        navigate('/ChangePassword')
-	}
-
+  
     return(
 
     <StyleContainerScroll container>       
@@ -33,14 +23,14 @@ const ListaVeterinarios= ({checked}) =>{
            
            <StyleContainer  content_taget_option_veterinario>
                 <StyleContainer  content_taget_option>
-                    <TargetVeterinariOption nombre="Datos de la clínica" imagen={require('../../img/hose-icon.webp')}/>
-                    <TargetVeterinariOption nombre="Datos del Dr."  imagen={require('../../img/men-icon.webp')}/>
+                    <TargetVeterinariOption nombre="Datos de la clínica" imagen={require('../../img/hose-icon.webp')} uri={'/addDatosClinica'} />
+                    <TargetVeterinariOption nombre="Datos del Dr."  imagen={require('../../img/men-icon.webp')} />
 
                 </StyleContainer>
 
                 <StyleContainer  content_taget_option>
-                    <TargetVeterinariOption nombre="Servicios"  imagen={require('../../img/trofeo-icon.webp')}/>
-                    <TargetVeterinariOption nombre="Documentos"  imagen={require('../../img/clipboard-icon.webp')}/>
+                    <TargetVeterinariOption nombre="Servicios"  imagen={require('../../img/trofeo-icon.webp')} />
+                    <TargetVeterinariOption nombre="Documentos"  imagen={require('../../img/clipboard-icon.webp')} />
 
                 </StyleContainer>
 

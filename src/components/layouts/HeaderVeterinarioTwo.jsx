@@ -19,7 +19,7 @@ const HeaderVeterinarioChangeImagen= ({ imagen, title}) =>{
         setuser(values)
 
         //*Unicamente prueba, la idea es conectarlo al back
-        navigate('/ChangePassword')
+        navigate('/veterinario')
 	}
 
     return(

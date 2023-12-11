@@ -14,6 +14,8 @@ import EmailOne from "./Login/EmailOne";
 /*Veterinarios*/
 import Veterinarios from "./Veterinario/ListaVeterinario";
 import AddVeterinariosOne from "./Veterinario/AddVeterinarioOne";
+import AddDatosClinica from "./Veterinario/AddDatosClinica";
+import AddDatosVeterinario from "./Veterinario/AddDatosVeterinario"
 
 const Main = () =>{
     return(
@@ -28,6 +30,8 @@ const Main = () =>{
             {/* Veterinarios */}
             <Route path='/veterinario' element={<Veterinarios />} />
             <Route path='/addVeterinarioOne' element={<AddVeterinariosOne />} />
+            <Route path='/addDatosClinica' element={<AddDatosClinica />} />
+            <Route path='/addDatosVeterinario' element={<AddDatosVeterinario />} />
         </Routes>
 
     )

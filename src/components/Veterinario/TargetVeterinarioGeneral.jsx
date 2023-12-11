@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import {useNavigate} from 'react-router-dom';
 
 //*Css
 import StyleText from "../../../css/TextStyle";
@@ -9,15 +8,7 @@ import StyleContainer from "../../../css/ContainerStyle";
 
 
 const TargetVeterinario= ({ imagen, nombre}) =>{
-    const [user, setuser] = useState({})
-    const navigate = useNavigate();
-
-    const handleSubmit = (values) => {
-        setuser(values)
-
-        //*Unicamente prueba, la idea es conectarlo al back
-        navigate('/veterinario')
-	}
+ 
 
     return(
    

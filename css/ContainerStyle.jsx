@@ -212,6 +212,8 @@ const styles = StyleSheet.create({
     },
     content_taget_option_veterinario:{
         width:'90%',
+        height:"auto",
+        flex:1,
         flexDirection:"grap",
         alignItems: 'center',
         justifyContent: 'center',
@@ -219,7 +221,8 @@ const styles = StyleSheet.create({
 
     content_asistent:{
         paddingTop:30,
-
+        paddingBottom:0,
+        
     }
 
 
