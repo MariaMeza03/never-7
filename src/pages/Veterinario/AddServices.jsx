@@ -8,9 +8,8 @@ import StyleContainerScroll from "../../../css/ScrollViewStyle";
 
 import HeaderVeterinarioChangeImagen from "../../components/layouts/HeaderVeterinarioTwo";
 import Listenbutton from "../../components/layouts/Listenbutton";
-import StyleButtonReturn from "../../../css/ButtonStyleGeneral";
-import TargetVeterinario from "../../components/Veterinario/TargetVeterinarioGeneral";
 import TargetServices from "../../components/Veterinario/TargetServicesVeterinario";
+import TargetButtonPlus from "../../components/Veterinario/TargetButtonPlus";
 
 const AddServices= ({checked}) =>{
     const navigate = useNavigate();
@@ -30,16 +29,19 @@ const AddServices= ({checked}) =>{
    
    
            <StyleContainer content_taget>
-               <StyleContainer >
-                   <StyleButtonReturn onPress={handleSubmit} button_plus_veterinario text="Agregar Veterinario">
-                   </StyleButtonReturn>
-               </StyleContainer>
-              
                <StyleContainer content_target_vaterinario>
-                   <TargetServices nombre="Vacunas" imagen={require('../../img/hose-icon.webp')} uri={'/addDatosClinica'} />
+                   <TargetServices nombre="Vacunas" imagen={require('../../img/vacunas.webp')} uri={'/addDatosClinica'} />
                    <TargetServices nombre="Consultas" imagen={require('../../img/hose-icon.webp')} uri={'/addDatosClinica'} />
-   
+                   <TargetServices nombre="Aseo" imagen={require('../../img/aseo.webp')} uri={'/addDatosClinica'} />
+                   <TargetServices nombre="Estética" imagen={require('../../img/estetica.webp')} uri={'/addDatosClinica'} />
+
+                   <StyleContainer  content_target_add>
+                        <TargetButtonPlus nombre="Agregar servicios" imagen={require('../../img/icon_plus.webp')} uri={'/addDatosClinica'} />
+                    </StyleContainer>
+
                </StyleContainer>
+
+
                
            </StyleContainer>
    

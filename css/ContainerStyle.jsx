@@ -229,9 +229,21 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderRadius:10,
         padding:5,
-        height:'auto',
-        width:'auto'
-    }
+        height:68,
+        width:68,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    content_target_add:{
+        width:'100%',
+        height:110,
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent: 'center',
+        paddingTop:10,
+        gap:10,
+    },
+
 
 
 
@@ -239,7 +251,7 @@ const styles = StyleSheet.create({
 })
 
 
-export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, content_terminos,content_button_header,content_media_header,content_header,content_button_return,target_veterinario,target_name_avatar, content_target_vaterinario,content_taget,imagen_change, content_taget_option,target_veterinario_option,content_taget_option_veterinario,content_asistent,content_imagen_services,children}){
+export default function StyleContainer({container_imagen_result,content_form_form_formik,content_input,content_form_quoter_formik,content_media,text, content_form, content_image, content_form_cotizador,content_nav,content_new_user,content_password, content_media_two, content_terminos,content_button_header,content_media_header,content_header,content_button_return,target_veterinario,target_name_avatar, content_target_vaterinario,content_taget,imagen_change, content_taget_option,target_veterinario_option,content_taget_option_veterinario,content_asistent,content_imagen_services,children,content_target_add}){
     const containerStyle =[
         text && styles.text,
         content_form && styles.content_form,
@@ -269,6 +281,7 @@ export default function StyleContainer({container_imagen_result,content_form_for
         content_taget_option_veterinario && styles.content_taget_option_veterinario,
         content_asistent && styles.content_asistent,
         content_imagen_services && styles.content_imagen_services,
+        content_target_add && styles.content_target_add,
         
     ]
 

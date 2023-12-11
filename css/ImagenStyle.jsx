@@ -57,13 +57,18 @@ const styles = StyleSheet.create({
         height:65,
         resizeMode: 'contain',
     },
+    imagen_option_plus:{
+        width:30,
+        height:30,
+        resizeMode: 'contain',
+    },
 
    
    
 })
 
 
-export default function StyleImagen({imagen_logo,imagen, imagen_firts ,link_imagen,link_media , imagen_header,imagen_icon_taget_vaterinario,imagen_header_change_imagen,imagen_header_imagen,imagen_option_veterinario, source}){
+export default function StyleImagen({imagen_logo,imagen, imagen_firts ,link_imagen,link_media , imagen_header,imagen_icon_taget_vaterinario,imagen_header_change_imagen,imagen_header_imagen,imagen_option_veterinario,imagen_option_plus, source}){
     const ImagenStyle =[
         /*styles.imagen_first,*/
         imagen && styles.imagen,
@@ -75,7 +80,8 @@ export default function StyleImagen({imagen_logo,imagen, imagen_firts ,link_imag
         imagen_icon_taget_vaterinario && styles.imagen_icon_taget_vaterinario,
         imagen_header_change_imagen && styles.imagen_header_change_imagen,
         imagen_header_imagen && styles.imagen_header_imagen,
-        imagen_option_veterinario && styles.imagen_option_veterinario
+        imagen_option_veterinario && styles.imagen_option_veterinario,
+        imagen_option_plus && styles.imagen_option_plus
     ]
 
     return(
